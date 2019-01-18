@@ -158,7 +158,7 @@ def main(_):
                         clip_duration_samples, 1.0, 500, 500)
     output_labels.append({'label': wanted_label, 'time': output_offset_ms})
 
-  input_data.save_wav_file(FLAGS.output_audio_file, output_audio,
+ # input_data.save_wav_file(FLAGS.output_audio_file, output_audio,
                            FLAGS.sample_rate)
   tf.logging.info('Saved streaming test wav to %s', FLAGS.output_audio_file)
 
